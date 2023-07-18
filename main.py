@@ -256,10 +256,9 @@ def handle_option(selected_option):
         print("Encrypted Text Generated: " + encrypted_text_path)
     elif selected_option == 3:
         print("Decrypt Text")
-        public_key_input = input("Enter the Public Key's identifier: ")
-        public_key_path = process_identifier(public_key_input, "public_key", "to_be_read")
-        private_key_input = input("Enter the Private Key's identifier: ")
-        private_key_path = process_identifier(private_key_input, "private_key", "to_be_read")
+        key_pair_input = input("Enter the Key Pair's identifier: ")
+        public_key_path = process_identifier(key_pair_input, "public_key", "to_be_read")
+        private_key_path = process_identifier(key_pair_input, "private_key", "to_be_read")
         encrypted_text_input = input("Enter the Encrypted Text's Identifier: ")
         encrypted_text_path = process_identifier(encrypted_text_input, "encrypted_text", "to_be_read")
         decrypted_text_path = process_identifier(encrypted_text_input, "decrypted_text", "to_be_created")
