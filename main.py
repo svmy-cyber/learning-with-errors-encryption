@@ -247,7 +247,7 @@ def handle_option(selected_option):
         print("Public Key Generated: " + generated_key_string_pair_tuple[1])
     elif selected_option == 2:
         print("Encrypt Text")
-        public_key_input = input("Enter the Public Key's identifier: ")
+        public_key_input = input("Enter the Key Pair's identifier: ")
         public_key_path = process_identifier(public_key_input, "public_key", "to_be_read")
         encrypted_text_identifier_input = input("Enter an identifier string for the encrypted text: ")
         encrypted_text_path = process_identifier(encrypted_text_identifier_input, "encrypted_text", "to_be_created")
